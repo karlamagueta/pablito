@@ -20,3 +20,17 @@ print(foods)
 drinks = ['mojito', 'cerveja', 'champagne', 'bombeirinho']
 foods.extend(drinks)
 print(foods)
+
+print(sorted(foods))
+
+for food in sorted(foods):
+    print(food)
+
+continuar = 'sim'
+while continuar == 'sim':
+    add_food = input('O Bruno quer saber qual foods vc quer')
+    foods.append(add_food)
+    continuar = input('Ainda quer mais foods?')
+print("ta bom então ta bom ")
+print(f"sua lista de foods é...{foods}")    
+
