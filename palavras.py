@@ -12,7 +12,7 @@ print(foods[palavra])'''
 
 ingles = {'pipoca':'popcorn','pudim':'pudding'}
 frances = {'pipoca':'pipoquê','pudim':'pudingy'}
-espanhol = {'pipoca':'el pipocon','pudim':'pudincito'}
+espanhol = {'pipoca':'pochoclos','pudim':'postrecito'}
 
 dicionario = {'ingles': ingles,'frances': frances, 'espanhol':espanhol}
 
