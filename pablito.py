@@ -1,18 +1,13 @@
-music = []
-#TODO: arrumar linhas 6 7 8 :)
-resposta = input("Pablo, qual é a musica?")
+musics = []
+
 continuar = 'sim'
 while continuar == 'sim':
-    add_music = input('Quer add mais songs?').strip()
-    music.append(add_music)
+    add_music = input('Pablo qual é a musica?').strip()
+    musics.append(add_music)
     continuar = input("Quer mais !sr?").strip()
-print(music)
     
-
-resposta = resposta.strip()
-
-print(resposta)
-
+for music in musics :
+    print(music)
 
 idade = input("Pablo, qual a sua idade")
 
