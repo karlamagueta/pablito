@@ -1,7 +1,13 @@
-resposta = input("Pablo, qual é a musica?")
-resposta = resposta.strip()
-print(resposta)
+musics = []
 
+continuar = 'sim'
+while continuar == 'sim':
+    add_music = input('Pablo qual é a musica?').strip()
+    musics.append(add_music)
+    continuar = input("Quer mais !sr?").strip()
+    
+for music in musics :
+    print(music)
 
 idade = input("Pablo, qual a sua idade")
 
