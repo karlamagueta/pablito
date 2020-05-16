@@ -19,7 +19,13 @@ dicionario = {'ingles': ingles,'frances': frances, 'espanhol':espanhol}
 palavra  = input("Qual a palavra vc gostaria de traduzir?\n").strip()
 lingua = input("pra qual lingua?")
 
-print(dicionario[lingua][palavra])
+if lingua in dicionario and palavra in dicionario[lingua]:
+    print(dicionario[lingua][palavra])
+
+else:
+    print(f'A lingua {lingua} ou a {palavra} não ta rolano.')
+
+
 #Todo tratar Keyerror (lingua errada + palavra errada) + Ensinar Função
 '''
 if lingua == 'ingles':
