@@ -19,6 +19,16 @@ pedidos.append({'numero':1002, 'itens':[{'produto':1, 'qtd':2}, {'produto':4, 'q
 
 # calcular peso e preço
 for pedido in pedidos:
+    nome_do_cliente = pedido['cliente']
     peso_total = 0
+    preço_total = 0
     for item in pedido['itens']:
-        
+       id_do_produto = item['produto']
+       quantidade_do_produto = item['qtd']
+       produto = produtos[id_do_produto]
+       peso_individual = quantidade_do_produto * produto['peso']
+       preço_individual = quantidade_do_produto * produto['preço']
+       preço_total += preço_individual
+       peso_total += peso_individual
+    print(f'Cliente: {nome_do_cliente} - O peso do pedido é {peso_total}, e o preço do pedido é {preço_total} impeachments :)')
+                
